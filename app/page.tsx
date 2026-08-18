@@ -84,7 +84,10 @@ export default function Home() {
                 </div>
             )}
 
-            <section className="mx-auto max-w-7xl px-6 py-8">
+            <section
+                id="overview"
+                className="mx-auto max-w-7xl scroll-mt-24 px-6 py-8"
+            >
                 <SummaryCards
                     year={year}
                     totalCount={statistics.totalCount}
@@ -93,7 +96,10 @@ export default function Home() {
                 />
             </section>
 
-            <section className="mx-auto max-w-7xl px-6 pb-8">
+            <section
+                id="region"
+                className="mx-auto max-w-7xl scroll-mt-24 px-6 pb-8"
+            >
                 <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
                     <RegionMap
                         data={statistics.regions}
