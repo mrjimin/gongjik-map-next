@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 공직지형도
 
-## Getting Started
+> 공무원연금공단 공공데이터를 활용하여
+> 연도별 공무원 인력 현황을 지역과 직종별로 한눈에 확인할 수 있도록 제작한 데이터 시각화 서비스입니다.
 
-First, run the development server:
+---
+
+## 주요 기능
+
+* **연도별 통계 확인**: 기준연도를 선택하여 해당 연도의 공무원 인력 현황을 확인할 수 있습니다.
+* **지역별 분포**: 대한민국 지도를 활용하여 지역별 공무원 인력 규모를 직관적으로 확인할 수 있습니다.
+* **지역별 순위**: 전국 지역의 공무원 인력을 순위와 그래프로 비교할 수 있습니다.
+* **지역 선택 분석**: 특정 지역을 선택하여 해당 지역의 직종별 공무원 현황을 확인할 수 있습니다.
+* **직종별 통계**: 전국 또는 선택한 지역의 직종별 인력 규모를 막대그래프로 비교할 수 있습니다.
+* **지도 확대·축소**: 지도 확대 및 축소 기능을 통해 지역별 데이터를 편리하게 확인할 수 있습니다.
+
+---
+
+## 기술 스택
+
+* **Framework**: Next.js (App Router)
+* **Language**: TypeScript
+* **Styling**: Tailwind CSS
+* **Data Visualization**: Recharts
+* **Map**: @svg-maps/south-korea
+* **Data**: [공무원연금공단 공공데이터](https://www.data.go.kr/data/15075635/openapi.do)
+
+---
+
+## 데이터 시각화
+
+### 지역별 분포
+
+대한민국 지도를 기반으로 지역별 공무원 인력 규모를 색상 단계로 표현하여
+지역 간 인력 분포를 직관적으로 비교할 수 있습니다.
+
+### 지역별 순위
+
+전국 지역의 공무원 인력을 순위와 막대 그래프로 표현하여
+지역별 인력 규모의 차이를 쉽게 확인할 수 있습니다.
+
+### 직종별 현황
+
+지역을 선택하면 해당 지역의 직종별 공무원 인력 현황으로 전환되어
+어떤 직종의 인력이 많이 분포하고 있는지 비교할 수 있습니다.
+
+---
+
+## 데이터 출처
+
+본 서비스는 아래 공공데이터를 활용하여 제작되었습니다.
+
+- **공무원연금공단 공공데이터**
+- 공무원 인력 현황 관련 통계 데이터
+
+---
+
+## 시작하기
+
+### 1. 저장소 클론 및 패키지 설치
+
+```bash
+git clone <repository-url>
+cd <project-directory>
+npm install
+````
+
+### 2. 개발 서버 실행
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+서버가 실행되면 브라우저에서 아래 주소로 접속합니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 프로젝트 목적
 
-To learn more about Next.js, take a look at the following resources:
+공공데이터로 제공되는 공무원 인력 통계는 주로 표와 수치 형태로 제공되어
+지역별·직종별 인력 분포를 직관적으로 파악하기 어렵습니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**공직지형도**는 이러한 데이터를 지도, 순위, 그래프로 시각화하여
+복잡한 통계 정보를 보다 쉽고 빠르게 이해할 수 있도록 제작했습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+특히 지역을 직접 선택하여 해당 지역의 직종별 인력 현황을 확인할 수 있도록 구성하여
+단순한 통계 조회를 넘어 지역별 공무원 인력 구조를 탐색할 수 있도록 했습니다.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 공직지형도 · All rights reserved.
