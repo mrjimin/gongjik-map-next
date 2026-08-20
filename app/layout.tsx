@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* Google Analytics */}
         <Script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-43CS6N5W5V"
+            src="https://www.googletagmanager.com/gtag/js?id=G-0DW0PQQZHR"
             strategy="afterInteractive"
         />
 
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-43CS6N5W5V');
+            gtag('config', 'G-0DW0PQQZHR');
           `}
         </Script>
 
