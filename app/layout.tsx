@@ -5,21 +5,21 @@ import Script from "next/script";
 import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "공직지형도",
-  description: "지역과 직종으로 바라보는 대한민국 공무원",
-  icons: {
-    icon: "/logo.svg",
-  }
+    title: "공직지형도",
+    description: "지역과 직종으로 바라보는 대한민국 공무원",
+    icons: {
+        icon: "/logo.svg",
+    }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -19,18 +19,18 @@ export function Footer() {
                 <p className="mt-4 text-xs leading-5 text-slate-400">
                     공공데이터를 활용한 비공식 개인 프로젝트입니다.
                     <br className="sm:hidden" />
-                    우석고등학교 및 국가기관과는 관련이 없습니다.
+                    국가기관과는 관련이 없습니다.
                 </p>
 
                 <div className="mt-6 flex flex-col gap-2 border-t border-slate-100 pt-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
                     <span>© {CURRENT_YEAR} 공직지형도 · All rights reserved.</span>
 
-                    <span>
-                        Supported by{" "}
-                        <span className="font-medium text-slate-500">
-                            우석고등학교 (공돌이)
-                        </span>
-                    </span>
+                    {/*<span>*/}
+                    {/*    Supported by{" "}*/}
+                    {/*    <span className="font-medium text-slate-500">*/}
+                    {/*        우석고등학교 (공돌이)*/}
+                    {/*    </span>*/}
+                    {/*</span>*/}
                 </div>
             </div>
         </footer>
